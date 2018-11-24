@@ -1,4 +1,4 @@
-package com.bierbrauer.gametime.models;
+package com.bierbrauer.gametime.models.AdventureMessage;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,20 +11,19 @@ import java.util.Objects;
 public class AdventureMessage {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    public Long id;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer id;
 
-    @NotNull
     public String message;
 
     // will use scale 0-5 for rarity, least to highest
     public Integer rarity;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
