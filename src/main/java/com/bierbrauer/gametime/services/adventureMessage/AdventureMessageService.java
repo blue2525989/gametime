@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.ThreadLocalRandom;
 
 @Service
 public class AdventureMessageService {
@@ -24,46 +26,106 @@ public class AdventureMessageService {
 	 * @return
 	 */
     public Map<String, Object> saveMessage(Map<String, Object> payload) {
+		return new HashMap<String, Object>() {{
 
-		System.out.println(payload.toString());
-		Map<String, Object> response = new HashMap<>();
+			AdventureMessage msg = new AdventureMessage();
+			msg.setMessage(payload.get("message").toString());
+			msg.setRarity((Integer) payload.get("rarity"));
 
-		log.debug("payload payload:" + payload);
-		AdventureMessage msg = new AdventureMessage();
-		log.debug("Saving payload:" + msg);
-		msg.setMessage(payload.get("message").toString());
-		msg.setRarity((Integer) payload.get("rarity"));
-		log.debug("Saving payload:" + msg);
-//		return messageRepo.save(msg);
-		try {
-			// save to repo
-			log.debug("Saving payload:" + msg);
-			messageRepo.save(msg);
-			// return message
-			response.put("body", "The message was saved.");
-			response.put("status", 201);
-		} catch (Exception e) {
-			log.debug("Exception: " + e);
-			response.put("body", "There has been an exception saving to database: " + e.getLocalizedMessage());
-			response.put("status", 501);
-		}
-		return response;
+			try {
+				messageRepo.save(msg);
+				put("body", "The message was saved.");
+				put("status", 201);
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception saving to database: " + e.getLocalizedMessage());
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
     }
 
-    public Map<String, Object> findAll() {
-//    	return  messageRepo.findAll();
-		Map<String, Object> response = new HashMap<String, Object>() {{
+	/**
+	 * findAll
+	 * @return
+	 */
+	public Map<String, Object> findAll() {
+		return new HashMap<String, Object>() {{
 			try {
 				Iterable<AdventureMessage> messages = messageRepo.findAll();
-				log.debug("Found messages:", messages);
 				put("body", messages);
 				put("status", 200);
 			} catch (Exception e) {
 				log.debug("Exception: " + e);
 				put("body", "There has been an exception obtaining the records.");
+				put("exception", e.getMessage());
 				put("status", 501);
 			}
 		}};
-		return response;
+	}
+
+	public Map<String, Object> findById(int id) {
+		return new HashMap<String, Object>() {{
+			try {
+				Optional<AdventureMessage> message = messageRepo.findById(id);
+				put("body", message);
+				put("status", 200);
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception obtaining the record with id: " + id);
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
+	}
+
+	public Map<String, Object> delete(int id) {
+		return new HashMap<String, Object>(){{
+			try {
+				messageRepo.deleteById(id);
+				put("body", "Successful delete operation.");
+				put("status", 200);
+				log.debug("Message has been deleted with id: " + id);
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception obtaining the record with id: " + id);
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
+	}
+
+	public Map<String, Object> findRandomMessage() {
+		return new HashMap<String, Object>() {{
+			try {
+				
+				long count = messageRepo.count();
+				int idRandom = ThreadLocalRandom.current().nextInt(0, Math.toIntExact(count) -1);
+
+				Optional<AdventureMessage> message = messageRepo.findById(idRandom);
+				put("body", message);
+				put("status", 200);
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception obtaining random record.");
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
+	}
+
+	public Map<String, Object> findAllByRarity(int rarity) {
+		return new HashMap<String, Object>() {{
+			try {
+				Iterable<AdventureMessage> messages = messageRepo.findAllByRarity(rarity);
+				put("body", messages);
+				put("status", 200);
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception obtaining records by rarity.");
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
 	}
 }

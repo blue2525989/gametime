@@ -14,9 +14,10 @@ public class AdventureMessage {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
+    @NotNull
     public String message;
 
-    // will use scale 0-5 for rarity, least to highest
+    @NotNull
     public Integer rarity;
 
     public Integer getId() {
@@ -39,9 +40,7 @@ public class AdventureMessage {
         return rarity;
     }
 
-    public void setRarity(Integer rarity) {
-        this.rarity = rarity;
-    }
+    public void setRarity(Integer rarity) { this.rarity = rarity; }
 
     @Override
     public boolean equals(Object o) {

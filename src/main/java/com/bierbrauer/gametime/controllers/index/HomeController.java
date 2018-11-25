@@ -1,6 +1,5 @@
 package com.bierbrauer.gametime.controllers.index;
 
-//import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-//@AutoConfigureRestDocs
 public class HomeController {
 
     @RequestMapping(path = {"/", "/greeting"})

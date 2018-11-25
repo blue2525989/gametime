@@ -9,4 +9,6 @@ import java.util.Optional;
 public interface AdventureMessageRepo extends CrudRepository<AdventureMessage, Integer> {
 
     Optional<AdventureMessage> findById(Integer id);
+
+    Iterable<AdventureMessage> findAllByRarity(Integer rarity);
 }
