@@ -95,10 +95,36 @@ public class AdventureMessageService {
 		}};
 	}
 
+	public Map<String, Object> update(int id, Map<String, Object> payload) {
+		return new HashMap<String, Object>(){{
+			try {
+				Optional<AdventureMessage> advMsg = messageRepo.findById(id);
+				AdventureMessage msg = advMsg.isPresent() ? advMsg.get() : null;
+				if (payload.containsKey("message"))
+				{
+					msg.setMessage(payload.get("message").toString());
+				}
+				if (payload.containsKey("rarity"))
+				{
+					msg.setRarity(Integer.parseInt(payload.get("rarity").toString()));
+				}
+				messageRepo.save(msg);
+				put("body", "Successful update operation.");
+				put("status", 200);
+				log.debug("Message has been updating with id: " + id);
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception updating the record with id: " + id);
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
+	}
+
 	public Map<String, Object> findRandomMessage() {
 		return new HashMap<String, Object>() {{
 			try {
-				
+
 				long count = messageRepo.count();
 				int idRandom = ThreadLocalRandom.current().nextInt(0, Math.toIntExact(count) -1);
 

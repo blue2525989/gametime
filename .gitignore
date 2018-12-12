@@ -1,2 +1,9 @@
 application.properties
 .idea/*
+/out*
+/.*
+/.
+out
+out*
+.
+.*

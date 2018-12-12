@@ -3,12 +3,11 @@ package com.bierbrauer.gametime.controllers.adventureMessages;
 import com.bierbrauer.gametime.services.adventureMessage.AdventureMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;
 
 
-@RestController
+@RestController()
 public class AdventureMessageController {
 
     @Autowired
@@ -42,5 +41,10 @@ public class AdventureMessageController {
     @GetMapping("get-by-id/{id}")
     public Map<String, Object> findById(@PathVariable int id) {
         return adventureMessageService.findById(id);
+    }
+
+    @PutMapping("update-message/{id}")
+    public Map<String, Object> updateMessage(@PathVariable int id, @RequestBody Map<String, Object> payload) {
+        return adventureMessageService.update(id, payload);
     }
 }
