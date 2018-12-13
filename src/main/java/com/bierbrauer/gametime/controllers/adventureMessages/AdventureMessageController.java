@@ -4,10 +4,12 @@ import com.bierbrauer.gametime.services.adventureMessage.AdventureMessageService
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
 @RestController()
+@RequestMapping(path = "adventure-message")
 public class AdventureMessageController {
 
     @Autowired
@@ -46,5 +48,19 @@ public class AdventureMessageController {
     @PutMapping("update-message/{id}")
     public Map<String, Object> updateMessage(@PathVariable int id, @RequestBody Map<String, Object> payload) {
         return adventureMessageService.update(id, payload);
+    }
+
+    @PostMapping("find-message")
+    public Map<String, Object> findMessage(@RequestBody Map<String, Object> payload) {
+        if (payload.containsKey("message")) {
+            return adventureMessageService.findByMessageFuzzy(payload.get("message").toString());
+        } else {
+            return new HashMap<String, Object>() {{
+                put("body", "The wrong search payload was passed, please ensure proper payload structure.");
+                put("exception: ", "The wrong search payload was passed, please ensure proper payload structure.");
+                put("status", 501);
+            }};
+        }
+
     }
 }

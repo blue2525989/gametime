@@ -29,7 +29,7 @@ public class HomeControllerTest {
     }
 
     @Test
-    public void greetingShouldReturnDefaultMessageCustomeName() throws Exception {
+    public void greetingShouldReturnDefaultMessageCustomName() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/?name=Jason",
                 String.class)).contains("Hello Jason");
     }

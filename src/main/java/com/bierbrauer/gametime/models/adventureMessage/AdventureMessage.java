@@ -1,4 +1,4 @@
-package com.bierbrauer.gametime.models.AdventureMessage;
+package com.bierbrauer.gametime.models.adventureMessage;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
-@Entity
+@Entity(name="AdventureMessage")
 public class AdventureMessage {
 
     @Id
@@ -59,7 +59,7 @@ public class AdventureMessage {
 
     @Override
     public String toString() {
-        return "AdventureMessage{" +
+        return "adventureMessage{" +
                 "id=" + id +
                 ", message='" + message + '\'' +
                 ", rarity=" + rarity +

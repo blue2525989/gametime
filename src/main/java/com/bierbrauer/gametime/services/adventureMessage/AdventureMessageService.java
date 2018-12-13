@@ -1,6 +1,6 @@
 package com.bierbrauer.gametime.services.adventureMessage;
 
-import com.bierbrauer.gametime.models.AdventureMessage.AdventureMessage;
+import com.bierbrauer.gametime.models.adventureMessage.AdventureMessage;
 import com.bierbrauer.gametime.repositories.adventureMessage.AdventureMessageRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -73,6 +73,22 @@ public class AdventureMessageService {
 			} catch (Exception e) {
 				log.debug("Exception: " + e);
 				put("body", "There has been an exception obtaining the record with id: " + id);
+				put("exception", e.getMessage());
+				put("status", 501);
+			}
+		}};
+	}
+
+	public Map<String, Object> findByMessageFuzzy(String messagePart) {
+		return new HashMap<String, Object>() {{
+			try {
+				Iterable<AdventureMessage> message = messageRepo.findByMessageFuzzy(messagePart);
+				put("body", message);
+				put("status", 200);
+
+			} catch (Exception e) {
+				log.debug("Exception: " + e);
+				put("body", "There has been an exception obtaining the record matching message: " + messagePart);
 				put("exception", e.getMessage());
 				put("status", 501);
 			}
