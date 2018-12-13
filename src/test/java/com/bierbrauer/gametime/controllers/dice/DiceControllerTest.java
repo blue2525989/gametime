@@ -26,7 +26,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD2() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d2",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 2", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 2);
@@ -35,7 +35,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD4() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d4",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 4", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 4);
@@ -44,7 +44,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD6() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d6",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 6", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 6);
@@ -53,7 +53,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD8() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d8",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 8", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 8);
@@ -62,7 +62,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD10() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d10",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 10", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 10);
@@ -71,7 +71,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD12() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d12",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 12", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 12);
@@ -80,7 +80,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD20() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d20",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 20", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 20);
@@ -89,7 +89,7 @@ public class DiceControllerTest {
 
     @Test
     public void rollD100() throws Exception {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             HashMap response = this.restTemplate.getForObject("http://localhost:" + port + "/dice/d100",
                     HashMap.class);
             assertTrue("response is between the range of 1 and 100", (int) response.get("roll") >= 1 && (int) response.get("roll") <= 100);

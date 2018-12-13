@@ -15,6 +15,6 @@ public interface AdventureMessageRepo extends CrudRepository<AdventureMessage, I
 
     Iterable<AdventureMessage> findAllByRarity(Integer rarity);
 
-    @Query("SELECT a FROM AdventureMessage a WHERE a.message = :message")
+    @Query("SELECT msg FROM AdventureMessage msg WHERE msg.message = :message")
     List<AdventureMessage> findByMessageFuzzy(@Param("message") String message);
 }

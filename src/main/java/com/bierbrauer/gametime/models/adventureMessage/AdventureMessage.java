@@ -1,5 +1,7 @@
 package com.bierbrauer.gametime.models.adventureMessage;
 
+import com.google.gson.Gson;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -58,11 +60,5 @@ public class AdventureMessage {
     }
 
     @Override
-    public String toString() {
-        return "adventureMessage{" +
-                "id=" + id +
-                ", message='" + message + '\'' +
-                ", rarity=" + rarity +
-                '}';
-    }
+    public String toString() { return new Gson().toJson(this); }
 }
