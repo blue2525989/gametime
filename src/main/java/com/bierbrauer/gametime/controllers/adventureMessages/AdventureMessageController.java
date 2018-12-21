@@ -20,21 +20,6 @@ public class AdventureMessageController {
         return adventureMessageService.findAll();
     }
 
-    @PostMapping("new-adv-msg")
-    public Map<String, Object> postMessage(@RequestBody Map<String, Object> payload) {
-        return adventureMessageService.saveMessage(payload);
-    }
-
-    @DeleteMapping("delete-message/{id}")
-    public Map<String, Object> deleteMessage(@PathVariable int id) {
-        return adventureMessageService.delete(id);
-    }
-
-    @GetMapping("get-random")
-    public Map<String, Object> getRandom() {
-        return adventureMessageService.findRandomMessage();
-    }
-
     @GetMapping("get-by-rarity/{rarity}")
     public Map<String, Object> getByRarity(@PathVariable int rarity) {
         return adventureMessageService.findAllByRarity(rarity);
@@ -45,10 +30,12 @@ public class AdventureMessageController {
         return adventureMessageService.findById(id);
     }
 
-    @PutMapping("update-message/{id}")
-    public Map<String, Object> updateMessage(@PathVariable int id, @RequestBody Map<String, Object> payload) {
-        return adventureMessageService.update(id, payload);
+    @GetMapping("random")
+    public Map<String, Object> getRandom() {
+        return adventureMessageService.findRandomMessage();
     }
+
+    /* find-* calls are GET calls pretending to be POST */
 
     @PostMapping("find-message-fuzzy")
     public Map<String, Object> findMessage(@RequestBody Map<String, Object> payload) {
@@ -76,4 +63,23 @@ public class AdventureMessageController {
             }};
         }
     }
+
+    /* NON GET calls */
+    
+    @PostMapping("new")
+    public Map<String, Object> postMessage(@RequestBody Map<String, Object> payload) {
+        return adventureMessageService.saveMessage(payload);
+    }
+
+    @DeleteMapping("delete/{id}")
+    public Map<String, Object> deleteMessage(@PathVariable int id) {
+        return adventureMessageService.delete(id);
+    }
+
+
+    @PutMapping("update/{id}")
+    public Map<String, Object> updateMessage(@PathVariable int id, @RequestBody Map<String, Object> payload) {
+        return adventureMessageService.update(id, payload);
+    }
+
 }
