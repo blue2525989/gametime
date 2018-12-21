@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
@@ -93,6 +94,22 @@ public class AdventureMessageService {
 				put("status", 501);
 			}
 		}};
+	}
+
+	// todo get some opinion on whether this style is better for other style of
+	// todo declaring the map and returning.
+	public Map<String, Object> findByMessageExact(String message) {
+		Map<String, Object> response = new HashMap<>();
+		try {
+			Iterable<AdventureMessage> messages = messageRepo.findByMessageExact(message);
+			response.put("body", messages);
+			response.put("status", 200);
+		} catch (Exception e) {
+			response.put("body", "There has been an exception searching for the message: " + message);
+			response.put("exception", e.getMessage());
+			response.put("status", 501);
+		}
+		return response;
 	}
 
 	public Map<String, Object> delete(int id) {

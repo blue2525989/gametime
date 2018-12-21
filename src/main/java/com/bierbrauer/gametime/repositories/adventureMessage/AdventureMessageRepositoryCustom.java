@@ -8,4 +8,6 @@ public interface AdventureMessageRepositoryCustom<AdventureMessageRepo, Integer>
 
     List<AdventureMessage> findByMessageFuzzy(String message);
 
+    List<AdventureMessage> findByMessageExact(String message);
+
 }

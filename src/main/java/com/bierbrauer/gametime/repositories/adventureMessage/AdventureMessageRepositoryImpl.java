@@ -9,8 +9,11 @@ public class AdventureMessageRepositoryImpl implements AdventureMessageRepositor
 
     @Override
     public List<AdventureMessage> findByMessageFuzzy(String message) {
-        return new ArrayList<AdventureMessage>() {{
+        return new ArrayList<>();
+    }
 
-        }};
+    @Override
+    public List<AdventureMessage> findByMessageExact(String message) {
+        return new ArrayList<>();
     }
 }

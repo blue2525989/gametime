@@ -4,10 +4,7 @@ import com.bierbrauer.gametime.models.common.Attack;
 import com.bierbrauer.gametime.models.common.Spell;
 import com.bierbrauer.gametime.models.common.Weapon;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -27,10 +24,13 @@ public class Monster {
 
     private String description;
 
+    @OneToMany
     private List<Attack> attacks;
 
+    @OneToMany
     private List<Spell> spells;
 
+    @OneToMany
     private List<Weapon> weapons;
 
     // these represent classifying stats

@@ -15,6 +15,11 @@ public interface AdventureMessageRepo extends CrudRepository<AdventureMessage, I
 
     Iterable<AdventureMessage> findAllByRarity(Integer rarity);
 
-    @Query("SELECT msg FROM AdventureMessage msg WHERE msg.message = :message")
+    /* Custom implementations */
+
+    @Query("SELECT msg FROM AdventureMessage msg WHERE msg.message LIKE CONCAT(:message,'%')")
     List<AdventureMessage> findByMessageFuzzy(@Param("message") String message);
+
+    @Query("SELECT msg FROM AdventureMessage msg WHERE msg.message = :message")
+    List<AdventureMessage> findByMessageExact(@Param("message") String message);
 }

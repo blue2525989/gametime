@@ -50,17 +50,30 @@ public class AdventureMessageController {
         return adventureMessageService.update(id, payload);
     }
 
-    @PostMapping("find-message")
+    @PostMapping("find-message-fuzzy")
     public Map<String, Object> findMessage(@RequestBody Map<String, Object> payload) {
         if (payload.containsKey("message")) {
             return adventureMessageService.findByMessageFuzzy(payload.get("message").toString());
         } else {
             return new HashMap<String, Object>() {{
                 put("body", "The wrong search payload was passed, please ensure proper payload structure.");
-                put("exception: ", "The wrong search payload was passed, please ensure proper payload structure.");
+                put("exception: ", "The wrong search payload was passed, payload requires: {\"message\": \"<some message>\"}");
                 put("status", 501);
             }};
         }
 
+    }
+
+    @PostMapping("find-message-exact")
+    public Map<String, Object> findMessageExact(@RequestBody Map<String, Object> payload) {
+        if (payload.containsKey("message")) {
+            return adventureMessageService.findByMessageExact(payload.get("message").toString());
+        } else {
+            return new HashMap<String, Object>() {{
+                put("body", "The wrong search payload was passed, please ensure proper payload structure.");
+                put("exception", "The wrong search payload was passed, payload requires: {\"message\": \"<some message>\"}");
+                put("status", 501);
+            }};
+        }
     }
 }
