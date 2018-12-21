@@ -1,8 +1,6 @@
 package com.bierbrauer.gametime.models.monster;
 
-import com.bierbrauer.gametime.models.common.Attack;
-import com.bierbrauer.gametime.models.common.Spell;
-import com.bierbrauer.gametime.models.common.Weapon;
+import com.bierbrauer.gametime.models.common.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -24,14 +22,14 @@ public class Monster {
 
     private String description;
 
+    @OneToOne
+    private Speed speed;
+
     @OneToMany
     private List<Attack> attacks;
 
     @OneToMany
-    private List<Spell> spells;
-
-    @OneToMany
-    private List<Weapon> weapons;
+    private List<Item> items;
 
     // these represent classifying stats
 

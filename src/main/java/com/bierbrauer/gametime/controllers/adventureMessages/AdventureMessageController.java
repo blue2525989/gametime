@@ -1,21 +1,23 @@
 package com.bierbrauer.gametime.controllers.adventureMessages;
 
+import com.bierbrauer.gametime.models.adventureMessage.AdventureMessage;
 import com.bierbrauer.gametime.services.adventureMessage.AdventureMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.Map;
 
 
 @RestController()
-@RequestMapping(path = "adventure-message")
+@RequestMapping(path = "adventure-messages")
 public class AdventureMessageController {
 
     @Autowired
     AdventureMessageService adventureMessageService;
 
-    @GetMapping("get-all")
+    @GetMapping("")
     public Map<String, Object> getAll() {
         return adventureMessageService.findAll();
     }
@@ -26,21 +28,21 @@ public class AdventureMessageController {
     }
 
     @GetMapping("get-by-id/{id}")
-    public Map<String, Object> findById(@PathVariable int id) {
+    public Map<String, Object> findById(@PathVariable Long id) {
         return adventureMessageService.findById(id);
     }
 
     @GetMapping("random")
     public Map<String, Object> getRandom() {
-        return adventureMessageService.findRandomMessage();
+        return adventureMessageService.findRandom();
     }
 
     /* find-* calls are GET calls pretending to be POST */
 
-    @PostMapping("find-message-fuzzy")
+    @PostMapping("find-fuzzy")
     public Map<String, Object> findMessage(@RequestBody Map<String, Object> payload) {
         if (payload.containsKey("message")) {
-            return adventureMessageService.findByMessageFuzzy(payload.get("message").toString());
+            return adventureMessageService.findByFuzzy(payload.get("message").toString());
         } else {
             return new HashMap<String, Object>() {{
                 put("body", "The wrong search payload was passed, please ensure proper payload structure.");
@@ -51,10 +53,10 @@ public class AdventureMessageController {
 
     }
 
-    @PostMapping("find-message-exact")
+    @PostMapping("find-exact")
     public Map<String, Object> findMessageExact(@RequestBody Map<String, Object> payload) {
         if (payload.containsKey("message")) {
-            return adventureMessageService.findByMessageExact(payload.get("message").toString());
+            return adventureMessageService.findByExact(payload.get("message").toString());
         } else {
             return new HashMap<String, Object>() {{
                 put("body", "The wrong search payload was passed, please ensure proper payload structure.");
@@ -65,20 +67,20 @@ public class AdventureMessageController {
     }
 
     /* NON GET calls */
-    
-    @PostMapping("new")
-    public Map<String, Object> postMessage(@RequestBody Map<String, Object> payload) {
-        return adventureMessageService.saveMessage(payload);
+
+    @PostMapping("save")
+    public Map<String, Object> postMessage(@Valid @RequestBody AdventureMessage payload) {
+        return adventureMessageService.save(payload);
     }
 
     @DeleteMapping("delete/{id}")
-    public Map<String, Object> deleteMessage(@PathVariable int id) {
+    public Map<String, Object> deleteMessage(@PathVariable Long id) {
         return adventureMessageService.delete(id);
     }
 
 
     @PutMapping("update/{id}")
-    public Map<String, Object> updateMessage(@PathVariable int id, @RequestBody Map<String, Object> payload) {
+    public Map<String, Object> updateMessage(@PathVariable Long id, @Valid @RequestBody AdventureMessage payload) {
         return adventureMessageService.update(id, payload);
     }
 

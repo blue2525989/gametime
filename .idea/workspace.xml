@@ -2,9 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3212f22-3464-4f7a-b89d-624aaf9dc3d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/AuditInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Speed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/attackRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/itemRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/speedRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/spellRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/weaponRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/monster/monsterRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/models/AdventureMessage/AdventureMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/models/AdventureMessage/AdventureMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/adventureMessageService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/adventureMessageService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/adventureMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/bierbrauer/gametime/services/adventureMessage/adventureMessageService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/adventureMessage/AdventureMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/adventureMessage/AdventureMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Attack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepoCustomFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepoCustomFuncImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -31,13 +59,13 @@
     <session id="454539479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="6" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,7 +81,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="79" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="4" />
         </counts>
@@ -70,8 +98,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="9727" />
-          <entry key="PLAIN_TEXT" value="105" />
+          <entry key="JAVA" value="10902" />
+          <entry key="PLAIN_TEXT" value="145" />
           <entry key="Properties" value="191" />
         </counts>
       </usages-collector>
@@ -79,33 +107,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+            <state relative-caret-position="198">
+              <caret line="157" column="77" selection-start-line="157" selection-start-column="77" selection-end-line="157" selection-end-column="77" />
               <folding>
-                <element signature="e#2756#2757#0" expanded="true" />
-                <element signature="e#2813#2814#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+            <state relative-caret-position="235">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -577,18 +595,30 @@
         <option value="$PROJECT_DIR$/src/test/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bierbrauer/gametime/controllers/dice/DiceControllerTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/adventureMessage/AdventureMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepositoryCustom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/monster/attackRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/monster/spellRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/monster/weaponRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/AuditInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Speed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/speedRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/spellRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/weaponRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/attackRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/itemRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/monster/monsterRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Weapon.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Spell.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Attack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/adventureMessage/AdventureMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java" />
       </list>
     </option>
   </component>
@@ -611,8 +641,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -654,6 +682,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gametime" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gametime" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="adventureMessages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
@@ -720,6 +758,26 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gametime" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gametime" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="monster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gametime" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -731,16 +789,6 @@
               <item name="gametime" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="adventureMessage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gametime" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="dice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
@@ -770,49 +818,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gametime" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gametime" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gametime" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="adventureMessages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gametime" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="dice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gametime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gametime" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gametime" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -825,7 +836,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545404821953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545431528096" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -838,13 +849,16 @@
       <recent name="com.bierbrauer.gametime.controllers.adventureMessages" />
       <recent name="com.bierbrauer.gametime.controllers.index" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.bierbrauer.gametime.controllers.funstuff" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bierbrauer.gametime.repositories.common" />
+      <recent name="com.bierbrauer.gametime.repositories.monster" />
+      <recent name="com.bierbrauer.gametime.controllers.funstuff" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bierbrauer.gametime.models.common" />
       <recent name="com.bierbrauer.gametime.services.dice" />
     </key>
   </component>
@@ -985,7 +999,8 @@
       <workItem from="1544723478704" duration="251000" />
       <workItem from="1544725927682" duration="2477000" />
       <workItem from="1545403096488" duration="2068000" />
-      <workItem from="1545417702785" duration="581000" />
+      <workItem from="1545417702785" duration="851000" />
+      <workItem from="1545426042654" duration="5165000" />
     </task>
     <servers />
   </component>
@@ -1022,13 +1037,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34286000" />
+    <option name="totallyTimeSpent" value="39721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1669" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29194838" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29563615" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1039,14 +1054,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37762237" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49969268" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003073" side_tool="true" weight="0.3216783" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32983682" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Build" order="13" />
@@ -1177,13 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/adventureMessage/AdventureMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="721">
@@ -1198,20 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1219,41 +1213,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Spell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepositoryCustom.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepoCustomFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
@@ -1263,7 +1223,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepoCustomFuncImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
@@ -1275,35 +1235,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Attack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        <state relative-caret-position="615">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/monster/MonsterController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/weaponRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        <state relative-caret-position="75">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/spellRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/speedRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/itemRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/common/attackRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/monster/monsterRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/AuditInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Attack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        <state relative-caret-position="118">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2813#2814#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/repositories/adventureMessage/AdventureMessageRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/adventureMessage/AdventureMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Spell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/common/Speed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="157" column="77" selection-start-line="157" selection-start-column="77" selection-end-line="157" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

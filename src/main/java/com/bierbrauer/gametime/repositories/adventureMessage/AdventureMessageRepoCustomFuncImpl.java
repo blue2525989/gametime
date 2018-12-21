@@ -5,7 +5,7 @@ import com.bierbrauer.gametime.models.adventureMessage.AdventureMessage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdventureMessageRepositoryImpl implements AdventureMessageRepositoryCustom {
+public class AdventureMessageRepoCustomFuncImpl implements AdventureMessageRepoCustomFunctions {
 
     @Override
     public List<AdventureMessage> findByMessageFuzzy(String message) {

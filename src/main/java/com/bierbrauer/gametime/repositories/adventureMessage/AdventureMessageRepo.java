@@ -9,9 +9,9 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.Optional;
 
-public interface AdventureMessageRepo extends CrudRepository<AdventureMessage, Integer>, AdventureMessageRepositoryCustom<AdventureMessageRepo, Integer> {
+public interface AdventureMessageRepo extends CrudRepository<AdventureMessage, Integer>, AdventureMessageRepoCustomFunctions<AdventureMessageRepo, Long> {
 
-    Optional<AdventureMessage> findById(Integer id);
+    Optional<AdventureMessage> findById(Long id);
 
     Iterable<AdventureMessage> findAllByRarity(Integer rarity);
 

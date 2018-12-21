@@ -18,7 +18,7 @@ public class MonsterController {
     }
 
     @GetMapping("get-by-id/{id}")
-    public Map<String, Object> getById(@PathVariable("id") Integer id) {
+    public Map<String, Object> getById(@PathVariable Integer id) {
         return new HashMap<String, Object>() {{
             // todo return stuff
         }};
@@ -26,6 +26,20 @@ public class MonsterController {
 
     @PostMapping("new")
     public Map<String, Object> newRecord(@RequestBody Map<String, Object> payload) {
+        return new HashMap<String, Object>() {{
+            // todo return and post stuff
+        }};
+    }
+
+    @PutMapping("update/{id}")
+    public Map<String, Object> updateRecord(@RequestBody Map<String, Object> payload) {
+        return new HashMap<String, Object>() {{
+            // todo return and post stuff
+        }};
+    }
+
+    @DeleteMapping("delete/{id}")
+    public Map<String, Object> deleteRecord(@RequestBody Map<String, Object> payload) {
         return new HashMap<String, Object>() {{
             // todo return and post stuff
         }};

@@ -4,7 +4,7 @@ import com.bierbrauer.gametime.models.adventureMessage.AdventureMessage;
 
 import java.util.List;
 
-public interface AdventureMessageRepositoryCustom<AdventureMessageRepo, Integer> {
+public interface AdventureMessageRepoCustomFunctions<AdventureMessageRepo, Integer> {
 
     List<AdventureMessage> findByMessageFuzzy(String message);
 
