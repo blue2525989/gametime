@@ -4,6 +4,7 @@ import com.bierbrauer.gametime.services.dice.DiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
@@ -49,5 +50,11 @@ public class DiceController {
     @GetMapping("d100")
     public Map<String, Object> rolld100() {
         return diceService.rollD100();
+    }
+
+    @GetMapping("roll-and-keep")
+    public Map<String, Object> rollAndKeep(@RequestParam(name = "dieSize") Integer dieSize, @RequestParam(name = "dieAmount") Integer dieAmount,
+                                           @RequestParam(name = "keepAmount") Integer keepAmount) {
+        return diceService.rollAndKeep(dieSize, dieAmount, keepAmount);
     }
 }
