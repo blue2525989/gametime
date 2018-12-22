@@ -70,7 +70,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="12721" />
+          <entry key="JAVA" value="12810" />
           <entry key="PLAIN_TEXT" value="145" />
           <entry key="Properties" value="191" />
         </counts>
@@ -79,20 +79,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/dice/DiceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="94" column="91" selection-start-line="94" selection-start-column="91" selection-end-line="94" selection-end-column="91" />
+            <state relative-caret-position="600">
+              <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/dice/DiceController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
+              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -583,8 +583,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/adventureMessages/AdventureMessageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/adventureMessage/AdventureMessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/models/monster/Monster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/dice/DiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/dice/DiceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/dice/DiceController.java" />
       </list>
     </option>
   </component>
@@ -987,7 +987,7 @@
       <workItem from="1545403096488" duration="2068000" />
       <workItem from="1545417702785" duration="851000" />
       <workItem from="1545426042654" duration="5165000" />
-      <workItem from="1545431825155" duration="4662000" />
+      <workItem from="1545431825155" duration="5225000" />
     </task>
     <servers />
   </component>
@@ -1024,7 +1024,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44383000" />
+    <option name="totallyTimeSpent" value="44946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1669" height="950" extended-state="0" />
@@ -1040,7 +1040,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32983682" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49969268" visible="true" weight="0.3216783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1346,13 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/dice/DiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1362,8 +1355,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/services/dice/DiceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="94" column="91" selection-start-line="94" selection-start-column="91" selection-end-line="94" selection-end-column="91" />
+        <state relative-caret-position="600">
+          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bierbrauer/gametime/controllers/dice/DiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
         </state>
       </provider>
     </entry>

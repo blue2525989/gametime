@@ -55,6 +55,7 @@ public class DiceController {
     @GetMapping("roll-and-keep")
     public Map<String, Object> rollAndKeep(@RequestParam(name = "dieSize") Integer dieSize, @RequestParam(name = "dieAmount") Integer dieAmount,
                                            @RequestParam(name = "keepAmount") Integer keepAmount) {
+        System.out.println("burner");
         return diceService.rollAndKeep(dieSize, dieAmount, keepAmount);
     }
 }
