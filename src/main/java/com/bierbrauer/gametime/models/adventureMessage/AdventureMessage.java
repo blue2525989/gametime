@@ -2,10 +2,7 @@ package com.bierbrauer.gametime.models.adventureMessage;
 
 import com.google.gson.Gson;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
@@ -17,6 +14,7 @@ public class AdventureMessage {
     private Long id;
 
     @NotNull
+    @Column(unique = true)
     public String message;
 
     public Integer rarity;
